@@ -1,0 +1,66 @@
+POST http://localhost:3333/users 
+content-type: application/json
+
+{
+    "name": "Drih",
+    "email": "aaa@aaa",
+    "password": "123456788",
+    "confirm_password": "123456788"
+}
+
+######
+
+GET http://localhost:3333/users
+
+
+###
+
+GET http://localhost:3333/users/2
+
+
+###
+PUT http://localhost:3333/users/1
+content-type: application/json
+
+{
+    "name": "teste5",
+    "email": "aaa@aaa",
+    "password": "123456788",
+    "confirm_password": "123456788"
+}
+
+###
+
+DELETE  http://localhost:3333/users/1
+
+###
+
+POST http://localhost:3333/thoughts 
+content-type: application/json
+
+{
+    "title": "Pensamento 08",
+    "description": " Pensamento do dia"
+}
+
+###
+
+GET http://localhost:3333/thoughts
+
+###
+
+GET http://localhost:3333/thoughts/5
+
+###
+
+PUT http://localhost:3333/thoughts/5
+content-type: application/json
+
+{
+    "title": "Pensamento 03",
+    "description": " Pensamento do dia"
+}
+
+###
+
+DELETE  http://localhost:3333/thoughts/5
